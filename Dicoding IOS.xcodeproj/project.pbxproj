@@ -13,6 +13,10 @@
 		9C0FB82B24D283A700D1EE6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0FB82924D283A700D1EE6E /* Main.storyboard */; };
 		9C0FB82D24D283A800D1EE6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0FB82C24D283A800D1EE6E /* Assets.xcassets */; };
 		9C0FB83024D283A800D1EE6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0FB82E24D283A800D1EE6E /* LaunchScreen.storyboard */; };
+		9C0FB83824D2C04100D1EE6E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0FB83724D2C04100D1EE6E /* DetailViewController.swift */; };
+		9C0FB83A24D2C05D00D1EE6E /* AcademiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0FB83924D2C05D00D1EE6E /* AcademiesViewController.swift */; };
+		9C0FB83C24D2C06700D1EE6E /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0FB83B24D2C06700D1EE6E /* ChallengesViewController.swift */; };
+		9C0FB83E24D2C07B00D1EE6E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0FB83D24D2C07B00D1EE6E /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9C0FB82C24D283A800D1EE6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0FB82F24D283A800D1EE6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C0FB83124D283A800D1EE6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0FB83724D2C04100D1EE6E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9C0FB83924D2C05D00D1EE6E /* AcademiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademiesViewController.swift; sourceTree = "<group>"; };
+		9C0FB83B24D2C06700D1EE6E /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		9C0FB83D24D2C07B00D1EE6E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		9C0FB82224D283A700D1EE6E /* Dicoding IOS */ = {
 			isa = PBXGroup;
 			children = (
+				9C0FB83F24D2C08200D1EE6E /* Controller */,
 				9C0FB82324D283A700D1EE6E /* AppDelegate.swift */,
 				9C0FB82524D283A700D1EE6E /* SceneDelegate.swift */,
-				9C0FB82724D283A700D1EE6E /* ViewController.swift */,
 				9C0FB82924D283A700D1EE6E /* Main.storyboard */,
 				9C0FB82C24D283A800D1EE6E /* Assets.xcassets */,
 				9C0FB82E24D283A800D1EE6E /* LaunchScreen.storyboard */,
 				9C0FB83124D283A800D1EE6E /* Info.plist */,
 			);
 			path = "Dicoding IOS";
+			sourceTree = "<group>";
+		};
+		9C0FB83F24D2C08200D1EE6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C0FB82724D283A700D1EE6E /* ViewController.swift */,
+				9C0FB83724D2C04100D1EE6E /* DetailViewController.swift */,
+				9C0FB83924D2C05D00D1EE6E /* AcademiesViewController.swift */,
+				9C0FB83B24D2C06700D1EE6E /* ChallengesViewController.swift */,
+				9C0FB83D24D2C07B00D1EE6E /* ProfileViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +160,11 @@
 			files = (
 				9C0FB82824D283A700D1EE6E /* ViewController.swift in Sources */,
 				9C0FB82424D283A700D1EE6E /* AppDelegate.swift in Sources */,
+				9C0FB83A24D2C05D00D1EE6E /* AcademiesViewController.swift in Sources */,
 				9C0FB82624D283A700D1EE6E /* SceneDelegate.swift in Sources */,
+				9C0FB83E24D2C07B00D1EE6E /* ProfileViewController.swift in Sources */,
+				9C0FB83C24D2C06700D1EE6E /* ChallengesViewController.swift in Sources */,
+				9C0FB83824D2C04100D1EE6E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 622X57WS26;
 				INFOPLIST_FILE = "Dicoding IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 622X57WS26;
 				INFOPLIST_FILE = "Dicoding IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
